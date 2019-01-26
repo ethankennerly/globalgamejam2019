@@ -1,0 +1,3 @@
+[submodule "GlobalGameJam2019/Assets/Plugins/UnityToykit"]
+	path = GlobalGameJam2019/Assets/Plugins/UnityToykit
+	url = git@github.com:ethankennerly/UnityToykit.git
