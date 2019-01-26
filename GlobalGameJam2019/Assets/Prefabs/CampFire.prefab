@@ -849,6 +849,7 @@ MonoBehaviour:
   - {fileID: 4868307747313496}
   - {fileID: 4936760281413976}
   m_GiveEnabled: 0
+  m_AvailableIndex: 2
 --- !u!212 &212396551582629828
 SpriteRenderer:
   m_ObjectHideFlags: 1

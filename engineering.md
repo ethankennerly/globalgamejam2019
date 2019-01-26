@@ -23,4 +23,5 @@
 - [ ] When clock is paused, pause other game time.
 - [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
+- [ ] On die, show best time.
 - [ ] <https://answers.unity.com/questions/1019815/how-can-i-prevent-lights-overlapping-in-intensity.html>

@@ -17,6 +17,7 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private bool m_GiveEnabled;
 
+        [SerializeField]
         private int m_AvailableIndex;
 
         public bool CanReceive(Containable item)
