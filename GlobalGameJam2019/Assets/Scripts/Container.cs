@@ -6,6 +6,10 @@ namespace FineGameDesign.FireFeeder
     {
         [SerializeField]
         private Containable[] m_Contents;
+        public Containable[] contents
+        {
+            get { return m_Contents; }
+        }
 
         [SerializeField]
         private Transform[] m_Parents;
@@ -15,24 +19,32 @@ namespace FineGameDesign.FireFeeder
 
         private int m_AvailableIndex;
 
-        public bool CanReceive()
+        public bool CanReceive(Containable item)
         {
-            return m_AvailableIndex < m_Contents.Length;
+            if (m_AvailableIndex >= m_Contents.Length)
+                return false;
+
+            if (item == null)
+                return false;
+
+            if (!item.GiveEnabled)
+                return false;
+
+            return true;
         }
 
         public bool TryReceive(Containable item)
         {
-            if (!CanReceive())
+            if (!CanReceive(item))
                 return false;
 
             int index = m_AvailableIndex;
             m_Contents[index] = item;
+            item.GiveEnabled = m_GiveEnabled;
             ++m_AvailableIndex;
 
-            if (index >= m_Parents.Length)
-                return true;
-
-            item.transform.SetParent(m_Parents[index], false);
+            int parentIndex = index >= m_Parents.Length ? m_Parents.Length - 1 : index;
+            item.transform.SetParent(m_Parents[parentIndex], false);
             item.transform.localPosition = new Vector3(0f, 0f, 0f);
 
             return true;
@@ -45,10 +57,11 @@ namespace FineGameDesign.FireFeeder
 
             do
             {
-                if (!CanReceive())
+                Containable otherItem = otherContainer.Peek();
+                if (!CanReceive(otherItem))
                     break;
 
-                Containable otherItem = otherContainer.Pop();
+                otherItem = otherContainer.Pop();
                 if (otherItem == null)
                     break;
 
@@ -59,6 +72,15 @@ namespace FineGameDesign.FireFeeder
                 }
             }
             while (true);
+        }
+
+        public Containable Peek()
+        {
+            if (m_AvailableIndex < 0)
+                return null;
+
+            Containable item = m_Contents[m_AvailableIndex];
+            return item;
         }
 
         public Containable Pop()
@@ -77,7 +99,6 @@ namespace FineGameDesign.FireFeeder
             if (otherContainer != null)
             {
                 TryReceiveContents(otherContainer);
-                // otherContainer.TryReceiveContents(this);
                 return;
             }
 

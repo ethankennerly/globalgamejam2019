@@ -779,7 +779,7 @@ MonoBehaviour:
   - {fileID: 4090701028117094}
   - {fileID: 4410177206564682}
   - {fileID: 4560718023418134}
-  m_GiveEnabled: 0
+  m_GiveEnabled: 1
 --- !u!114 &114150578710736442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -797,6 +797,7 @@ MonoBehaviour:
   m_MaxFuel: 1
   m_FuelPerSecond: -0.015625
   m_CookieSizePerFuel: 10
+  m_Container: {fileID: 114079017007908722}
 --- !u!114 &114709600614530390
 MonoBehaviour:
   m_ObjectHideFlags: 1

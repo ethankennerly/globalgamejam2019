@@ -8,12 +8,14 @@
 - [x] Tap to set avatar destination.
 - [x] Rotate light when move.
 - [x] Pickup fuel.
+- [x] Dropoff fuel.
 
 # TODO
 
-- [ ] Dropoff fuel.
 - [ ] Dropoff fuel increases camp fire light size.
 - [ ] Dropoff fuel increases torch light size.
+- [ ] When fuel is depleted, destroy that fuel game object.
+- [ ] Sticks in camp fire do not overlap.
 - [ ] Set avatar animation and flipping by direction.
 - [ ] When chaser is collides, animate game over UI.
 - [ ] On tap, animate start UI disappearing.
