@@ -1,0 +1,13 @@
+
+campfire.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flameCampfire
+  rotate: false
+  xy: 2, 2
+  size: 261, 433
+  orig: 261, 433
+  offset: 0, 0
+  index: -1
