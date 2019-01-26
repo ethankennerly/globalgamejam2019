@@ -4,6 +4,7 @@ namespace FineGameDesign.FireFeeder
 {
     public sealed class Fuel : MonoBehaviour
     {
+        [SerializeField]
         private float m_Quantity = 1f;
         public float quantity
         {

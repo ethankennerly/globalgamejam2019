@@ -9,12 +9,12 @@
 - [x] Rotate light when move.
 - [x] Pickup fuel.
 - [x] Dropoff fuel.
+- [x] Dropoff fuel increases camp fire light size.
+- [x] When fuel is depleted, destroy that fuel game object.
 
 # TODO
 
-- [ ] Dropoff fuel increases camp fire light size.
 - [ ] Dropoff fuel increases torch light size.
-- [ ] When fuel is depleted, destroy that fuel game object.
 - [ ] Sticks in camp fire do not overlap.
 - [ ] Set avatar animation and flipping by direction.
 - [ ] When chaser is collides, animate game over UI.

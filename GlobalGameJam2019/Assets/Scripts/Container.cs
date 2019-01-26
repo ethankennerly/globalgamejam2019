@@ -77,10 +77,10 @@ namespace FineGameDesign.FireFeeder
 
         public Containable Peek()
         {
-            if (m_AvailableIndex < 0)
+            if (m_AvailableIndex <= 0)
                 return null;
 
-            Containable item = m_Contents[m_AvailableIndex];
+            Containable item = m_Contents[m_AvailableIndex - 1];
             return item;
         }
 

@@ -646,7 +646,7 @@ MonoBehaviour:
   m_CurrentFuel: 2
   m_MinFuel: 0
   m_MaxFuel: 100
-  m_FuelPerSecond: -0.015625
+  m_FuelPerSecond: -0.03125
   m_CookieSizePerFuel: 10
   m_Container: {fileID: 114994967640242934}
 --- !u!114 &114281824644005536
@@ -672,6 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5025b7281bfa414da7304ca2a5a5ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Quantity: 1
 --- !u!114 &114369906945021294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -725,6 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5025b7281bfa414da7304ca2a5a5ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Quantity: 1
 --- !u!114 &114994967640242934
 MonoBehaviour:
   m_ObjectHideFlags: 1
