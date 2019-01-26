@@ -299,7 +299,7 @@ MonoBehaviour:
   m_CurrentFuel: 1
   m_MinFuel: 0
   m_MaxFuel: 1
-  m_FuelPerSecond: -0.125
+  m_FuelPerSecond: -0.015625
   m_CookieSizePerFuel: 10
 --- !u!114 &114829558997765348
 MonoBehaviour:
