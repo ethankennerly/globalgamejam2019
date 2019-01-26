@@ -1,0 +1,34 @@
+
+kid.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+_0001_flameTorch
+  rotate: false
+  xy: 516, 128
+  size: 82, 355
+  orig: 82, 355
+  offset: 0, 0
+  index: -1
+_0004_Stick1
+  rotate: false
+  xy: 2, 2
+  size: 199, 39
+  orig: 199, 39
+  offset: 0, 0
+  index: -1
+_0006_kidFront
+  rotate: false
+  xy: 2, 43
+  size: 255, 440
+  orig: 255, 440
+  offset: 0, 0
+  index: -1
+_0007_kidBack
+  rotate: false
+  xy: 259, 43
+  size: 255, 440
+  orig: 255, 440
+  offset: 0, 0
+  index: -1
