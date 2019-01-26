@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4611837202366800}
   - component: {fileID: 108455097482542898}
+  - component: {fileID: 114150578710736442}
   m_Layer: 0
   m_Name: AvatarLight
   m_TagString: Untagged
@@ -281,6 +282,23 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114150578710736442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1844348421171772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a66186b121064510be43d316c4b3f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightWithCookie: {fileID: 108455097482542898}
+  m_CurrentFuel: 1
+  m_MinFuel: 0
+  m_MaxFuel: 1
+  m_FuelPerSecond: -0.125
+  m_CookieSizePerFuel: 10
 --- !u!114 &114829558997765348
 MonoBehaviour:
   m_ObjectHideFlags: 1

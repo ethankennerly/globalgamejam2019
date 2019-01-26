@@ -6,9 +6,13 @@
 
 # TODO
 
-- [ ] Light diminishes.
+- [ ] Light diminishes over time.
     - [ ] Set cookie size.
+- [ ] Tap to move.
+- [ ] Rotate light when move.
+- [ ] Set animation and flipping by direction.
 - [ ] Pickup fuel.
+- [ ] Dropoff fuel increases light size.
 - [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
 - [ ] <https://answers.unity.com/questions/1019815/how-can-i-prevent-lights-overlapping-in-intensity.html>

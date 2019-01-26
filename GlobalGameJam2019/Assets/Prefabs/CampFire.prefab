@@ -53,6 +53,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4091491252017136}
   - component: {fileID: 108979746077966514}
+  - component: {fileID: 114135852050008590}
   m_Layer: 0
   m_Name: CampFireLight
   m_TagString: Untagged
@@ -178,6 +179,23 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114135852050008590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1874231820557810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a66186b121064510be43d316c4b3f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightWithCookie: {fileID: 108979746077966514}
+  m_CurrentFuel: 1
+  m_MinFuel: 0
+  m_MaxFuel: 1
+  m_FuelPerSecond: -0.125
+  m_CookieSizePerFuel: 10
 --- !u!114 &114420506111844272
 MonoBehaviour:
   m_ObjectHideFlags: 1
