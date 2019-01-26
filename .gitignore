@@ -43,3 +43,6 @@ sysinfo.txt
 
 # Mac
 .DS_Store
+
+# JetBrains editor
+/*/Assets/Plugins/Editor*

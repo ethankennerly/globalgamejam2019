@@ -143,7 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4949213196771858}
   m_Layer: 0
-  m_Name: LightContainerSlot
+  m_Name: AvatarLightContainerSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 4242597677527202}
   - component: {fileID: 114730488097826502}
   m_Layer: 0
-  m_Name: LightContainerParents
+  m_Name: AvatarLightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -897,6 +897,9 @@ MonoBehaviour:
   - {fileID: 4410177206564682}
   - {fileID: 4560718023418134}
   m_GiveEnabled: 1
+  m_IsThief: 0
+  m_AvailableIndex: 0
+  m_AdditionalReceiver: {fileID: 114730488097826502}
 --- !u!114 &114150578710736442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -945,6 +948,9 @@ MonoBehaviour:
   m_Parents:
   - {fileID: 4949213196771858}
   m_GiveEnabled: 0
+  m_IsThief: 1
+  m_AvailableIndex: 1
+  m_AdditionalReceiver: {fileID: 0}
 --- !u!114 &114803205324795864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -956,6 +962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5025b7281bfa414da7304ca2a5a5ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Quantity: 1
 --- !u!114 &114829558997765348
 MonoBehaviour:
   m_ObjectHideFlags: 1

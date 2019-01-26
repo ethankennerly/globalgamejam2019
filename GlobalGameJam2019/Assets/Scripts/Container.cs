@@ -17,8 +17,15 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private bool m_GiveEnabled;
 
+        [Header("Takes even if give is not enabled.")]
+        [SerializeField]
+        private bool m_IsThief;
+
         [SerializeField]
         private int m_AvailableIndex;
+
+        [SerializeField]
+        private Container m_AdditionalReceiver;
 
         public bool CanReceive(Containable item)
         {
@@ -28,7 +35,7 @@ namespace FineGameDesign.FireFeeder
             if (item == null)
                 return false;
 
-            if (!item.GiveEnabled)
+            if (!item.GiveEnabled && !m_IsThief)
                 return false;
 
             return true;
@@ -53,7 +60,7 @@ namespace FineGameDesign.FireFeeder
 
         public void TryReceiveContents(Container otherContainer)
         {
-            if (!otherContainer.m_GiveEnabled)
+            if (!otherContainer.m_GiveEnabled && !m_IsThief)
                 return;
 
             do
@@ -100,6 +107,9 @@ namespace FineGameDesign.FireFeeder
             if (otherContainer != null)
             {
                 TryReceiveContents(otherContainer);
+                Container receiver = m_AdditionalReceiver;
+                if (receiver != null)
+                    receiver.TryReceiveContents(otherContainer);
                 return;
             }
 

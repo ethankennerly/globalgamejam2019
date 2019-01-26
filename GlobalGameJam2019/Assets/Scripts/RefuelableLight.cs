@@ -33,14 +33,10 @@ namespace FineGameDesign.FireFeeder
 
         private void UpdateFuel(float deltaTime)
         {
-            if (m_Container != null)
-            {
-                float previousFuel = GetFuel(m_Container);
-                m_CurrentFuel = previousFuel + m_FuelPerSecond * deltaTime;
-                m_CurrentFuel = Mathf.Clamp(m_CurrentFuel, m_MinFuel, m_MaxFuel);
-                ChangeFuel(m_Container, previousFuel, m_CurrentFuel);
-                return;
-            }
+            float previousFuel = GetFuel(m_Container);
+            m_CurrentFuel = previousFuel + m_FuelPerSecond * deltaTime;
+            m_CurrentFuel = Mathf.Clamp(m_CurrentFuel, m_MinFuel, m_MaxFuel);
+            ChangeFuel(m_Container, previousFuel, m_CurrentFuel);
         }
 
         private void UpdateCookieSize(float fuel)
