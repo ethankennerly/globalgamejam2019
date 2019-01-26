@@ -41,19 +41,24 @@ namespace FineGameDesign.FireFeeder
             return true;
         }
 
+        private void Replace(Containable item, int index)
+        {
+            m_Contents[index] = item;
+            item.GiveEnabled = m_GiveEnabled;
+
+            int parentIndex = index >= m_Parents.Length ? m_Parents.Length - 1 : index;
+            item.transform.SetParent(m_Parents[parentIndex], false);
+            item.transform.localPosition = new Vector3(0f, 0f, 0f);
+        }
+
         public bool TryReceive(Containable item)
         {
             if (!CanReceive(item))
                 return false;
 
             int index = m_AvailableIndex;
-            m_Contents[index] = item;
-            item.GiveEnabled = m_GiveEnabled;
             ++m_AvailableIndex;
-
-            int parentIndex = index >= m_Parents.Length ? m_Parents.Length - 1 : index;
-            item.transform.SetParent(m_Parents[parentIndex], false);
-            item.transform.localPosition = new Vector3(0f, 0f, 0f);
+            Replace(item, index);
 
             return true;
         }
@@ -80,6 +85,52 @@ namespace FineGameDesign.FireFeeder
                 }
             }
             while (true);
+
+            if (m_IsThief)
+                TrySwapForMostFuel(otherContainer);
+        }
+
+        private void TrySwapForMostFuel(Container otherContainer)
+        {
+            Containable item = Peek();
+            if (item == null)
+                return;
+
+            Fuel fuel = item.GetComponent<Fuel>();
+            Containable best = null;
+            float mostFuel = fuel == null ? 0f : fuel.quantity;
+            float maxFuel = 1f;
+            int bestIndex = -1;
+
+            for (int index = 0, numContents = otherContainer.contents.Length; index < numContents; ++index)
+            {
+                Containable otherItem = otherContainer.contents[index];
+                if (mostFuel >= maxFuel)
+                    break;
+
+                if (otherItem == null)
+                    continue;
+
+                Fuel otherFuel = otherItem.GetComponent<Fuel>();
+                if (otherFuel == null)
+                    continue;
+                
+                if (otherFuel.quantity > mostFuel)
+                {
+                    mostFuel = otherFuel.quantity;
+                    best = otherItem;
+                    bestIndex = index;
+                }
+            }
+
+            if (best == null)
+                return;
+
+            item = Pop();
+            if (!TryReceive(best))
+                return;
+
+            otherContainer.Replace(item, bestIndex);
         }
 
         public Containable Peek()
