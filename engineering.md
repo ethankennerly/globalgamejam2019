@@ -11,7 +11,9 @@
 
 # TODO
 
-- [ ] Dropoff fuel increases light size.
+- [ ] Dropoff fuel.
+- [ ] Dropoff fuel increases camp fire light size.
+- [ ] Dropoff fuel increases torch light size.
 - [ ] Set avatar animation and flipping by direction.
 - [ ] When chaser is collides, animate game over UI.
 - [ ] On tap, animate start UI disappearing.
