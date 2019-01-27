@@ -31,15 +31,12 @@ namespace FineGameDesign.FireFeeder
             {
                 m_DistanceSinceLastStep -= m_DistanceBetweenStep;
                 bool hasPool = m_Pool != null && m_Pool.Length > 0;
-                GameObject instance = !hasPool ? null : instance = m_Pool[m_PoolIndex];
+                GameObject instance = !hasPool ? null : m_Pool[m_PoolIndex];
                 if (instance == null)
                 {
                     instance = Instantiate(m_PrefabsToInstantiate[m_PrefabIndex], transform.position, transform.rotation);
                     if (hasPool)
-                    {
                         m_Pool[m_PoolIndex] = instance;
-                        ++m_PoolIndex;
-                    }
                 }
                 else
                 {
@@ -47,6 +44,12 @@ namespace FineGameDesign.FireFeeder
                     instance.transform.position = transform.position;
                     instance.transform.rotation = transform.rotation;
                     instance.SetActive(true);
+                }
+                if (hasPool)
+                {
+                    ++m_PoolIndex;
+                    if (m_PoolIndex >= m_Pool.Length)
+                        m_PoolIndex = 0;
                 }
                 ++m_PrefabIndex;
                 if (m_PrefabIndex >= m_PrefabsToInstantiate.Length)
