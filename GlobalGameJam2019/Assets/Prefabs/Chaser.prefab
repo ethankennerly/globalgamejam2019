@@ -203,6 +203,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ColliderEndsGame: {fileID: 0}
   m_GameEnded: 0
+  m_EndAnimator: {fileID: 0}
+  m_EndAnimation: End
 --- !u!212 &212346261361902620
 SpriteRenderer:
   m_ObjectHideFlags: 1

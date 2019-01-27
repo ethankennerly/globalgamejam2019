@@ -11,6 +11,11 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private bool m_GameEnded;
 
+        [SerializeField]
+        private Animator m_EndAnimator;
+        [SerializeField]
+        private string m_EndAnimation;
+
         private void Update()
         {
             if (!m_GameEnded)
@@ -28,6 +33,7 @@ namespace FineGameDesign.FireFeeder
                 return;
 
             m_GameEnded = true;
+            m_EndAnimator.Play(m_EndAnimation);
         }
     }
 }
