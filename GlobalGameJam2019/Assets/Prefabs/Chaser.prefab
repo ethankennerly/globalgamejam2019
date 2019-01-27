@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Follower: {fileID: 4179563001248180}
   m_Target: {fileID: 0}
-  m_Speed: 10
+  m_Speed: 8
   m_Rotator: {fileID: 4704874803083798}
   m_Repellants:
   - {fileID: 0}

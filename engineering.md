@@ -21,10 +21,10 @@
 - [x] Start clock. On die pause clock.
 - [x] Lots of fuel scattered around.
 - [x] When chaser enters light, repels to a point.
+- [x] When chaser in light, disable game ender.
 
 # TODO
 
-- [ ] When chaser in light, disable game ender.
 - [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
 - [ ] When chaser in light, do not spawn footprints.
