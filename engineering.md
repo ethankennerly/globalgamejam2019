@@ -19,17 +19,23 @@
 - [x] On tap, animate start UI disappearing.
 - [x] When chaser is collides with avatar, animate game ended UI.
 - [x] Start clock. On die pause clock.
+- [x] Lots of fuel scattered around.
 
 # TODO
 
-- [ ] When chaser is close and moves, spawn footprint.
-- [ ] Footprint fades over time.
 - [ ] When chaser enters light, repels and pauses.
 - [ ] When chaser would faces light, walks perpendicular to light source.
-- [ ] Lots of fuel scattered around.
+- [ ] When chaser is close and moves, spawn footprint.
+- [ ] Footprint fades over time.
 - [ ] Set avatar animation and flipping by direction.
+- [ ] Blend torch animation.
+- [ ] Hear audio.
+- [ ] Lots of fuel scattered in distance.
+- [ ] Hold to change direction.
 - [ ] On tap, start clock.
 - [ ] When clock is paused, pause other game time.
 - [ ] On die, show best time.
 - [ ] Block avatar walking into fire.
+- [ ] Tween to increase fire.
+- [ ] Start fire smaller.
 - [ ] <https://answers.unity.com/questions/1019815/how-can-i-prevent-lights-overlapping-in-intensity.html>
