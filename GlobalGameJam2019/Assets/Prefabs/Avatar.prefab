@@ -879,9 +879,11 @@ MonoBehaviour:
   m_CurrentFuel: 1
   m_MinFuel: 0
   m_MaxFuel: 1
-  m_FuelPerSecond: -0.03125
+  m_FuelPerSecond: -0.015625
   m_CookieSizePerFuel: 40
   m_Container: {fileID: 114730488097826502}
+  m_AddFuelClips: []
+  m_AddFuelSource: {fileID: 0}
 --- !u!114 &114292331536769398
 MonoBehaviour:
   m_ObjectHideFlags: 1
