@@ -27,6 +27,9 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private Container m_AdditionalReceiver;
 
+        [SerializeField]
+        private GameObject m_ActivatedEachReceive;
+
         public bool CanReceive(Containable item)
         {
             if (m_AvailableIndex >= m_Contents.Length)
@@ -59,6 +62,11 @@ namespace FineGameDesign.FireFeeder
             int index = m_AvailableIndex;
             ++m_AvailableIndex;
             Replace(item, index);
+            if (m_ActivatedEachReceive != null)
+            {
+                m_ActivatedEachReceive.SetActive(false);
+                m_ActivatedEachReceive.SetActive(true);
+            }
 
             return true;
         }
