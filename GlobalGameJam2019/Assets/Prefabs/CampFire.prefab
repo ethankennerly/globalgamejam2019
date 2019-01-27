@@ -653,7 +653,7 @@ Light:
   m_Intensity: 0.75
   m_Range: 40
   m_SpotAngle: 20
-  m_CookieSize: 10
+  m_CookieSize: 5
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
@@ -693,7 +693,7 @@ MonoBehaviour:
   m_MinFuel: 0
   m_MaxFuel: 100
   m_FuelPerSecond: -0.03125
-  m_CookieSizePerFuel: 10
+  m_CookieSizePerFuel: 5
   m_Container: {fileID: 114994967640242934}
 --- !u!114 &114281824644005536
 MonoBehaviour:

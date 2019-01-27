@@ -744,11 +744,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 4.9050894, y: 3.4338236}
-      - {x: -1.774812, y: 0.53367627}
-      - {x: -1.7485319, y: -1.0711199}
-      - {x: 5.680091, y: -2.306754}
-      - {x: 7.7283173, y: 0.8706702}
+    - - {x: 7.7086716, y: 3.602039}
+      - {x: -1.1580243, y: 0.9261775}
+      - {x: -0.96352994, y: -1.2954066}
+      - {x: 8.119207, y: -3.960868}
+      - {x: 12.157976, y: -0.082549095}
 --- !u!61 &61713272760031980
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -794,7 +794,7 @@ Light:
   m_Intensity: 0.75
   m_Range: 40
   m_SpotAngle: 30
-  m_CookieSize: 20
+  m_CookieSize: 40
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
@@ -976,7 +976,7 @@ MonoBehaviour:
   m_MinFuel: 0
   m_MaxFuel: 1
   m_FuelPerSecond: -0.015625
-  m_CookieSizePerFuel: 20
+  m_CookieSizePerFuel: 40
   m_Container: {fileID: 114730488097826502}
 --- !u!114 &114709600614530390
 MonoBehaviour:

@@ -26,7 +26,7 @@
 
 - [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
-- [ ] When chaser in light, do not spawn footprints.
+- [ ] When chaser in light, do not spawn footprints and disable its collider.
 - [ ] Set avatar animation and flipping by direction.
 - [ ] Blend torch animation.
 - [ ] Hear audio.
