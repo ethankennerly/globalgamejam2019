@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.08088237, g: 0.08088237, b: 0.08088237, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -1444,11 +1444,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4179563001248180, guid: f00b767b284854cf28408b5fb832a467, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -85.3
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 4179563001248180, guid: f00b767b284854cf28408b5fb832a467, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.2200005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4179563001248180, guid: f00b767b284854cf28408b5fb832a467, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1474,6 +1474,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114004355554014476, guid: f00b767b284854cf28408b5fb832a467,
+        type: 2}
+      propertyPath: m_Target
+      value: 
+      objectReference: {fileID: 948302870}
     - target: {fileID: 114491211419111202, guid: f00b767b284854cf28408b5fb832a467,
         type: 2}
       propertyPath: m_ColliderEndsGame
@@ -1481,14 +1486,14 @@ Prefab:
       objectReference: {fileID: 948302872}
     - target: {fileID: 114491211419111202, guid: f00b767b284854cf28408b5fb832a467,
         type: 2}
+      propertyPath: m_Clock
+      value: 
+      objectReference: {fileID: 1196119045}
+    - target: {fileID: 114491211419111202, guid: f00b767b284854cf28408b5fb832a467,
+        type: 2}
       propertyPath: m_EndAnimator
       value: 
       objectReference: {fileID: 901314599}
-    - target: {fileID: 114004355554014476, guid: f00b767b284854cf28408b5fb832a467,
-        type: 2}
-      propertyPath: m_Target
-      value: 
-      objectReference: {fileID: 948302870}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f00b767b284854cf28408b5fb832a467, type: 2}
   m_IsPrefabParent: 0
@@ -5418,6 +5423,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4066060514769222, guid: 6a64a98bf67004548adbe4474a6e714a,
     type: 2}
   m_PrefabInternal: {fileID: 1184800681}
+--- !u!114 &1196119045 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114610602599955038, guid: 74d61666cde2044548c9267d526e4a25,
+    type: 2}
+  m_PrefabInternal: {fileID: 1345764816}
+  m_Script: {fileID: 11500000, guid: 77dc7829a5dc34b6aaf8d011e6ea7771, type: 3}
 --- !u!1001 &1217910119
 Prefab:
   m_ObjectHideFlags: 0
@@ -5667,10 +5678,6 @@ Prefab:
     - target: {fileID: 114231953759568292, guid: 5a6e6dadbc6c94bde920802c37dd66be,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062671449572896, guid: 5a6e6dadbc6c94bde920802c37dd66be, type: 2}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

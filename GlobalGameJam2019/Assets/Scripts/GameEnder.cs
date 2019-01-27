@@ -9,6 +9,9 @@ namespace FineGameDesign.FireFeeder
         private Collider2D m_ColliderEndsGame;
 
         [SerializeField]
+        private Clock m_Clock;
+
+        [SerializeField]
         private bool m_GameEnded;
 
         [SerializeField]
@@ -33,6 +36,7 @@ namespace FineGameDesign.FireFeeder
                 return;
 
             m_GameEnded = true;
+            m_Clock.paused = true;
             m_EndAnimator.Play(m_EndAnimation);
         }
     }

@@ -18,6 +18,7 @@
 - [x] When chaser is collides with avatar, next tap restarts game.
 - [x] On tap, animate start UI disappearing.
 - [x] When chaser is collides with avatar, animate game ended UI.
+- [x] Start clock. On die pause clock.
 
 # TODO
 
@@ -26,9 +27,7 @@
 - [ ] When chaser enters light, repels and pauses.
 - [ ] When chaser would faces light, walks perpendicular to light source.
 - [ ] Lots of fuel scattered around.
-- [ ] When 
 - [ ] Set avatar animation and flipping by direction.
-- [ ] Start clock.
 - [ ] On tap, start clock.
 - [ ] When clock is paused, pause other game time.
 - [ ] On die, show best time.
