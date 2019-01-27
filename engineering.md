@@ -43,12 +43,12 @@
 - [x] Toby: Torch relights.
 - [x] Frame rate 30 fps.
 - [x] Camp fire repels avatar.
+- [x] On game end, ignore tap until 1 second passed.
 
 # TODO
 
-- [ ] Z-sort fire.
-- [ ] On game end, delay tap until a few seconds passed.
 - [ ] On die, show best time.
+- [ ] Z-sort fire.
 - [ ] On tap, start clock.
 - [ ] When clock is paused, pause other game time.
 - [ ] Tween to increase fire.
