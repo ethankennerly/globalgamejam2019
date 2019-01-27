@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!60 &318940 stripped
+PolygonCollider2D:
+  m_PrefabParentObject: {fileID: 60850461393679446, guid: c6feac836c17f4de99ecd56e1a60d929,
+    type: 2}
+  m_PrefabInternal: {fileID: 849349189}
 --- !u!1001 &2880831
 Prefab:
   m_ObjectHideFlags: 0
@@ -1479,6 +1484,16 @@ Prefab:
       propertyPath: m_Target
       value: 
       objectReference: {fileID: 948302870}
+    - target: {fileID: 114004355554014476, guid: f00b767b284854cf28408b5fb832a467,
+        type: 2}
+      propertyPath: m_Repellants.Array.data[0]
+      value: 
+      objectReference: {fileID: 2101877733}
+    - target: {fileID: 114004355554014476, guid: f00b767b284854cf28408b5fb832a467,
+        type: 2}
+      propertyPath: m_Repellants.Array.data[1]
+      value: 
+      objectReference: {fileID: 318940}
     - target: {fileID: 114491211419111202, guid: f00b767b284854cf28408b5fb832a467,
         type: 2}
       propertyPath: m_ColliderEndsGame
@@ -8798,6 +8813,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4066060514769222, guid: 6a64a98bf67004548adbe4474a6e714a,
     type: 2}
   m_PrefabInternal: {fileID: 2099546662}
+--- !u!58 &2101877733 stripped
+CircleCollider2D:
+  m_PrefabParentObject: {fileID: 58809794059216436, guid: 68bc66adf2f024255aa0c42911e72a70,
+    type: 2}
+  m_PrefabInternal: {fileID: 1874371629}
 --- !u!1001 &2126069713
 Prefab:
   m_ObjectHideFlags: 0
