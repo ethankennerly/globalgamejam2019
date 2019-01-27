@@ -26,47 +26,57 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private bool m_OriginalFacesLeft;
 
+        [SerializeField]
+        private bool m_Idle;
+        [SerializeField]
+        private bool m_Back;
+        [SerializeField]
+        private bool m_Left;
+
         private Vector3 m_PreviousPosition;
 
         private void OnEnable()
         {
             m_PreviousPosition = transform.position;
+            m_Idle = true;
         }
 
         private void Update()
         {
             Vector3 currentPosition = transform.position;
-            if (currentPosition == m_PreviousPosition)
+            if (m_Idle && currentPosition == m_PreviousPosition)
                 return;
 
             float distance = Vector3.Distance(currentPosition, m_PreviousPosition);
             float deltaTime = Time.deltaTime;
-            bool idle = true;
+            m_Idle = true;
             if (deltaTime > 0f)
             {
                 float speed = distance / deltaTime;
                 if (speed > m_MaxIdleSpeed)
-                    idle = false;
+                    m_Idle = false;
             }
             float angle = AngleBetweenPoints(m_PreviousPosition, currentPosition);
-            bool front = angle < 0f || angle > 180f;
+            if (!m_Idle)
+                m_Back = angle < 0f || angle > 180f;
             string animation;
-            if (idle)
-                if (front)
+            if (m_Idle)
+                if (m_Back)
                     animation = m_IdleFrontAnimation;
                 else
                     animation = m_IdleBackAnimation;
             else
-                if (front)
+                if (m_Back)
                     animation = m_MoveFrontAnimation;
                 else
                     animation = m_MoveBackAnimation;
             if (m_Skeleton.AnimationName != animation)
                 m_Skeleton.AnimationName = animation;
 
-            bool left = (angle > 90f && angle < 270f) ||
-                (angle < -90f && angle > -270f);
-            bool flipX = m_OriginalFacesLeft ? !left : left;
+            if (!m_Idle)
+                m_Left = (angle > 90f && angle < 270f) ||
+                    (angle < -90f && angle > -270f);
+            bool flipX = m_OriginalFacesLeft ? !m_Left : m_Left;
             m_Skeleton.Skeleton.FlipX = flipX;
 
             m_PreviousPosition = transform.position;

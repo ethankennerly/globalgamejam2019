@@ -32172,6 +32172,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4133214096092334, guid: 318602d67005c4d8c9accfd47f57d9c2,
     type: 2}
   m_PrefabInternal: {fileID: 918916945}
+--- !u!58 &920698542 stripped
+CircleCollider2D:
+  m_PrefabParentObject: {fileID: 58439581753232738, guid: 68bc66adf2f024255aa0c42911e72a70,
+    type: 2}
+  m_PrefabInternal: {fileID: 1874371629}
 --- !u!1001 &922951791
 Prefab:
   m_ObjectHideFlags: 0
@@ -48963,6 +48968,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114932436501816038, guid: c6feac836c17f4de99ecd56e1a60d929,
+        type: 2}
+      propertyPath: m_Repellants.Array.data[0]
+      value: 
+      objectReference: {fileID: 920698542}
+    - target: {fileID: 114709600614530390, guid: c6feac836c17f4de99ecd56e1a60d929,
+        type: 2}
+      propertyPath: m_Repellants.Array.data[0]
+      value: 
+      objectReference: {fileID: 920698542}
     - target: {fileID: 33038977333941936, guid: c6feac836c17f4de99ecd56e1a60d929,
         type: 2}
       propertyPath: m_Mesh
@@ -64816,21 +64831,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114957420726147150, guid: 68bc66adf2f024255aa0c42911e72a70,
-        type: 2}
-      propertyPath: m_ColliderEndsGame
-      value: 
-      objectReference: {fileID: 849349190}
-    - target: {fileID: 114957420726147150, guid: 68bc66adf2f024255aa0c42911e72a70,
-        type: 2}
-      propertyPath: m_Clock
-      value: 
-      objectReference: {fileID: 1196119045}
-    - target: {fileID: 114957420726147150, guid: 68bc66adf2f024255aa0c42911e72a70,
-        type: 2}
-      propertyPath: m_EndAnimator
-      value: 
-      objectReference: {fileID: 901314599}
     - target: {fileID: 33569195495619150, guid: 68bc66adf2f024255aa0c42911e72a70,
         type: 2}
       propertyPath: m_Mesh

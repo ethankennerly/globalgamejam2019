@@ -16,6 +16,13 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private Transform m_Rotator;
 
+        [Header("Optional.")]
+        [SerializeField]
+        private Collider2D[] m_Repellants;
+
+        [SerializeField]
+        private float m_RepelDistance = 4f;
+
         private bool m_HasDestination;
         private Vector2 m_Destination;
         private Vector2 m_Step;
@@ -43,7 +50,20 @@ namespace FineGameDesign.FireFeeder
             Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
         }
 
-        private void SetWorldDestination(float worldX, float worldY)
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (Array.IndexOf(m_Repellants, other) < 0)
+                return;
+
+            Vector3 position = transform.position;
+            Vector3 away = position - other.transform.position;
+            away.Normalize();
+            away *= m_RepelDistance;
+            Vector3 retreatPoint = position + away;
+            m_Destination = retreatPoint;            
+        }
+
+        public void SetWorldDestination(float worldX, float worldY)
         {
             m_HasDestination = true;
             m_Destination = new Vector3(worldX, worldY, 0f);

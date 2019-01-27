@@ -42,10 +42,10 @@
 - [x] Message "Can you survive longer" calls out time.
 - [x] Toby: Torch relights.
 - [x] Frame rate 30 fps.
+- [x] Camp fire repels avatar.
 
 # TODO
 
-- [ ] Block avatar walking into fire.
 - [ ] Z-sort fire.
 - [ ] On game end, delay tap until a few seconds passed.
 - [ ] On die, show best time.

@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 114806596752853370}
   - component: {fileID: 58218815916444460}
   - component: {fileID: 50316258548703224}
+  - component: {fileID: 114932436501816038}
   m_Layer: 0
   m_Name: AvatarBody
   m_TagString: Untagged
@@ -1090,6 +1091,9 @@ MonoBehaviour:
   m_MoveBackAnimation: WalkBack
   m_MoveFrontAnimation: WalkFront
   m_OriginalFacesLeft: 1
+  m_Idle: 0
+  m_Back: 0
+  m_Left: 0
 --- !u!114 &114545803781478620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1173,6 +1177,9 @@ MonoBehaviour:
   m_Follower: {fileID: 4554759921967430}
   m_Speed: 2.5
   m_Rotator: {fileID: 4594895166242886}
+  m_Repellants:
+  - {fileID: 0}
+  m_RepelDistance: 4
 --- !u!114 &114730488097826502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1375,6 +1382,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GiveEnabled: 1
+--- !u!114 &114932436501816038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390243605276972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcd1f282363a43c48b7e021cc577523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Follower: {fileID: 114709600614530390}
+  m_Repellants:
+  - {fileID: 0}
+  m_RepelDistance: 2
 --- !u!212 &212346401677394566
 SpriteRenderer:
   m_ObjectHideFlags: 1
