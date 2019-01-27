@@ -31,8 +31,8 @@
 
 # TODO
 
-- [ ] Footprint fades over time.
 - [ ] To conserve CPU and memory, pool footprints.
+- [ ] Footprint fades over time.
 - [ ] Set avatar animation and flipping by direction.
 - [ ] Blend torch animation.
 - [ ] Hear audio.
