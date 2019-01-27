@@ -38,9 +38,8 @@ namespace FineGameDesign.FireFeeder
 
         private void Update()
         {
-            if (m_Repelled)
+            if (UpdateRepelled())
             {
-                UpdateRepelled();
                 return;
             }
 
@@ -89,23 +88,25 @@ namespace FineGameDesign.FireFeeder
             SetWorldDestination(destination.x, destination.y);
         }
 
-        private void UpdateRepelled()
+        private bool UpdateRepelled()
         {
             m_RepelledTime -= Time.deltaTime;
             if (m_RepelledTime >= 1f)
             {
                 Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
-                return;
+                return true;
             }
 
             if (m_RepelledTime > 0f)
-                return;
+                return true;
 
             if (m_Repelled)
-                return;
+                return true;
 
             foreach (MonoBehaviour disabler in m_OnRepelDisablers)
                 disabler.enabled = true;
+
+            return false;
         }
 
 
