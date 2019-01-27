@@ -16,6 +16,7 @@
     - [x] Container refers to Thief: Swap best content of other, regardless if give enabled.
 - [x] Chaser chases avatar.
 - [x] When chaser is collides with avatar, next tap restarts game.
+- [ ] On tap, animate start UI disappearing.
 
 # TODO
 
@@ -26,7 +27,6 @@
 - [ ] When chaser would faces light, walks perpendicular to light source.
 - [ ] Start clock.
 - [ ] Set avatar animation and flipping by direction.
-- [ ] On tap, animate start UI disappearing.
 - [ ] On tap, start clock.
 - [ ] When clock is paused, pause other game time.
 - [ ] On die, show best time.
