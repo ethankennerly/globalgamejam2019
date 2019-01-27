@@ -12,18 +12,22 @@
 - [x] Dropoff fuel increases camp fire light size.
 - [x] When fuel is depleted, destroy that fuel game object.
 - [x] Sticks in camp fire do not overlap.
+- [x] Dropoff fuel increases torch light size.
+    - [x] Container refers to Thief: Swap best content of other, regardless if give enabled.
 
 # TODO
 
-- [ ] Dropoff fuel increases torch light size.
-    - [ ] Container refers to Thief: Swap bottommost content of other, regardless if give enabled.
-- [ ] Set avatar animation and flipping by direction.
+- [ ] Chaser chases avatar.
+- [ ] When chaser is close and moves, spawn footprint.
+- [ ] Footprint fades over time.
 - [ ] When chaser is collides, animate game over UI.
+- [ ] When chaser enters light, repels and pauses.
+- [ ] When chaser would faces light, walks perpendicular to light source.
+- [ ] Start clock.
+- [ ] Set avatar animation and flipping by direction.
 - [ ] On tap, animate start UI disappearing.
 - [ ] On tap, start clock.
 - [ ] When clock is paused, pause other game time.
-- [ ] When chaser is close and moves, spawn footprint.
-- [ ] Footprint fades over time.
 - [ ] On die, show best time.
 - [ ] Block avatar walking into fire.
 - [ ] <https://answers.unity.com/questions/1019815/how-can-i-prevent-lights-overlapping-in-intensity.html>
