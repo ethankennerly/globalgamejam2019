@@ -35,10 +35,10 @@
 - [x] Hear 39 audio clips.
 - [x] Start fire small.
 - [x] Lots of fuel scattered in distance.
+- [x] Time counts minutes.
 
 # TODO
 
-- [ ] Time counts minutes.
 - [ ] Toby: Torch relights.
 - [ ] Chaser starts at random angle from origin.
 - [ ] When chaser footstep is close, shake screen.
@@ -47,7 +47,9 @@
 - [ ] On game end, delay tap until a few seconds passed.
 - [ ] On die, show best time.
 - [ ] On tap, start clock.
+- [ ] Frame rate 30 fps.
 - [ ] When clock is paused, pause other game time.
 - [ ] Block avatar walking into fire.
+- [ ] Z-sort fire.
 - [ ] Tween to increase fire.
 - [ ] <https://answers.unity.com/questions/1019815/how-can-i-prevent-lights-overlapping-in-intensity.html>
