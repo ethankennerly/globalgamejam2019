@@ -22,20 +22,20 @@ namespace FineGameDesign.FireFeeder
 
         private ClickInputSystem m_Input = ClickInputSystem.instance;
 
-        private Action<float, float> m_OnWorldXY;
+        private Action<float, float> m_OnWorldHoldXY;
 
         private void OnEnable()
         {
-            if (m_OnWorldXY == null)
-                m_OnWorldXY = SetWorldDestination;
+            if (m_OnWorldHoldXY == null)
+                m_OnWorldHoldXY = SetWorldDestination;
 
-            m_Input.onWorldXY -= m_OnWorldXY;
-            m_Input.onWorldXY += m_OnWorldXY;
+            m_Input.onWorldHoldXY -= m_OnWorldHoldXY;
+            m_Input.onWorldHoldXY += m_OnWorldHoldXY;
         }
 
         private void OnDisable()
         {
-            m_Input.onWorldXY -= m_OnWorldXY;
+            m_Input.onWorldHoldXY -= m_OnWorldHoldXY;
         }
 
         private void Update()

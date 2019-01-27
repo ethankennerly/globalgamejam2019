@@ -37,13 +37,14 @@
 - [x] Lots of fuel scattered in distance.
 - [x] Time counts minutes.
 - [x] Chaser starts at random angle from origin.
+- [x] Hold to change direction.
 
 # TODO
 
+- [ ] Toby: Original image for avatar.
 - [ ] Toby: Torch relights.
 - [ ] When chaser footstep is close, shake screen.
 - [ ] Message "Can you survive longer" calls out time.
-- [ ] Hold to change direction.
 - [ ] On game end, delay tap until a few seconds passed.
 - [ ] On die, show best time.
 - [ ] On tap, start clock.
