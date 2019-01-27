@@ -43251,6 +43251,33 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114231953759568292, guid: 5a6e6dadbc6c94bde920802c37dd66be,
+        type: 2}
+      propertyPath: m_text
+      value: 'Can you surive longer?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114231953759568292, guid: 5a6e6dadbc6c94bde920802c37dd66be,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 114231953759568292, guid: 5a6e6dadbc6c94bde920802c37dd66be,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114231953759568292, guid: 5a6e6dadbc6c94bde920802c37dd66be,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114231953759568292, guid: 5a6e6dadbc6c94bde920802c37dd66be,
+        type: 2}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a6e6dadbc6c94bde920802c37dd66be, type: 2}
   m_IsPrefabParent: 0
@@ -48906,11 +48933,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4554759921967430, guid: c6feac836c17f4de99ecd56e1a60d929, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.2999997
+      value: -3.38
       objectReference: {fileID: 0}
     - target: {fileID: 4554759921967430, guid: c6feac836c17f4de99ecd56e1a60d929, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.60000026
+      value: -2.23
       objectReference: {fileID: 0}
     - target: {fileID: 4554759921967430, guid: c6feac836c17f4de99ecd56e1a60d929, type: 2}
       propertyPath: m_LocalPosition.z
@@ -64789,6 +64816,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114957420726147150, guid: 68bc66adf2f024255aa0c42911e72a70,
+        type: 2}
+      propertyPath: m_ColliderEndsGame
+      value: 
+      objectReference: {fileID: 849349190}
+    - target: {fileID: 114957420726147150, guid: 68bc66adf2f024255aa0c42911e72a70,
+        type: 2}
+      propertyPath: m_Clock
+      value: 
+      objectReference: {fileID: 1196119045}
+    - target: {fileID: 114957420726147150, guid: 68bc66adf2f024255aa0c42911e72a70,
+        type: 2}
+      propertyPath: m_EndAnimator
+      value: 
+      objectReference: {fileID: 901314599}
     - target: {fileID: 33569195495619150, guid: 68bc66adf2f024255aa0c42911e72a70,
         type: 2}
       propertyPath: m_Mesh
