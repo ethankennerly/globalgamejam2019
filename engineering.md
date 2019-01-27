@@ -34,12 +34,14 @@
 - [x] Blend torch animation by fuel.
 - [x] Hear 39 audio clips.
 - [x] Start fire small.
+- [x] Lots of fuel scattered in distance.
 
 # TODO
 
-- [ ] Torch relights.
-- [ ] Lots of fuel scattered in distance.
+- [ ] Time counts minutes.
+- [ ] Toby: Torch relights.
 - [ ] Chaser starts at random angle from origin.
+- [ ] When chaser footstep is close, shake screen.
 - [ ] Message "Can you survive longer" calls out time.
 - [ ] Hold to change direction.
 - [ ] On game end, delay tap until a few seconds passed.

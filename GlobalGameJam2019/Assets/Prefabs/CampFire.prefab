@@ -648,7 +648,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.25
+  m_Radius: 4.5
 --- !u!61 &61544021616471498
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -810,7 +810,7 @@ Light:
   m_Intensity: 0.75
   m_Range: 40
   m_SpotAngle: 20
-  m_CookieSize: 5
+  m_CookieSize: 10
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
@@ -849,8 +849,8 @@ MonoBehaviour:
   m_CurrentFuel: 2
   m_MinFuel: 0
   m_MaxFuel: 100
-  m_FuelPerSecond: -0.03125
-  m_CookieSizePerFuel: 5
+  m_FuelPerSecond: -0.125
+  m_CookieSizePerFuel: 10
   m_Container: {fileID: 114596532969390800}
   m_AddFuelClips:
   - {fileID: 8300000, guid: 3fcf3bb3bea2a4be3b20c899d3eaf165, type: 3}
@@ -1050,6 +1050,7 @@ MonoBehaviour:
   m_IsThief: 0
   m_AvailableIndex: 2
   m_AdditionalReceiver: {fileID: 0}
+  m_ActivatedEachReceive: {fileID: 0}
 --- !u!114 &114939840512364644
 MonoBehaviour:
   m_ObjectHideFlags: 1
