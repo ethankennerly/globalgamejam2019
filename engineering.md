@@ -14,10 +14,10 @@
 - [x] Sticks in camp fire do not overlap.
 - [x] Dropoff fuel increases torch light size.
     - [x] Container refers to Thief: Swap best content of other, regardless if give enabled.
+- [x] Chaser chases avatar.
 
 # TODO
 
-- [ ] Chaser chases avatar.
 - [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
 - [ ] When chaser is collides, animate game over UI.
