@@ -30,10 +30,10 @@
 - [x] When chaser in light, do not spawn footprints.
 - [x] To conserve CPU and memory, pool footprints.
 - [x] Footprint fades over time.
+- [x] Set avatar idle/walk animation and flip by direction.
 
 # TODO
 
-- [ ] Set avatar idle/walk animation and flip by direction.
 - [ ] Blend torch animation by fuel.
 - [ ] Hear audio.
 - [ ] Lots of fuel scattered in distance.
