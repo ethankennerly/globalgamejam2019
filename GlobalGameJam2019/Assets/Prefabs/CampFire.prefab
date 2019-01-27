@@ -852,6 +852,11 @@ MonoBehaviour:
   m_FuelPerSecond: -0.03125
   m_CookieSizePerFuel: 5
   m_Container: {fileID: 114596532969390800}
+  m_AddFuelClips:
+  - {fileID: 8300000, guid: 3fcf3bb3bea2a4be3b20c899d3eaf165, type: 3}
+  - {fileID: 8300000, guid: 3fcf3bb3bea2a4be3b20c899d3eaf165, type: 3}
+  - {fileID: 8300000, guid: d55bb065223044c34a890c6cd89aaf1b, type: 3}
+  m_AddFuelSource: {fileID: 82585230534484102}
 --- !u!114 &114281824644005536
 MonoBehaviour:
   m_ObjectHideFlags: 1

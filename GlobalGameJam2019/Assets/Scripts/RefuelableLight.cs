@@ -28,6 +28,14 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private Container m_Container;
 
+        [SerializeField]
+        private AudioClip[] m_AddFuelClips;
+
+        [SerializeField]
+        private AudioSource m_AddFuelSource;
+
+        private float m_FuelLastFrame;
+
         private void Update()
         {
             UpdateFuel(Time.deltaTime);
@@ -35,12 +43,20 @@ namespace FineGameDesign.FireFeeder
             UpdateScale(m_ScaleByFuel, m_CurrentFuel);
         }
 
+        private void OnEnable()
+        {
+            m_FuelLastFrame = GetFuel(m_Container);
+        }
+
         private void UpdateFuel(float deltaTime)
         {
             float previousFuel = GetFuel(m_Container);
             m_CurrentFuel = previousFuel + m_FuelPerSecond * deltaTime;
             m_CurrentFuel = Mathf.Clamp(m_CurrentFuel, m_MinFuel, m_MaxFuel);
-            ChangeFuel(m_Container, previousFuel, m_CurrentFuel);
+            float deltaFuel = m_CurrentFuel - previousFuel;
+            ChangeFuel(m_Container, deltaFuel);
+            PlayFuelIncrease(m_AddFuelSource, m_AddFuelClips, previousFuel, m_FuelLastFrame);
+            m_FuelLastFrame = previousFuel;
         }
 
         private void UpdateCookieSize(float fuel)
@@ -73,9 +89,8 @@ namespace FineGameDesign.FireFeeder
             return total;
         }
 
-        private void ChangeFuel(Container container, float previousFuel, float currentFuel)
+        private void ChangeFuel(Container container, float deltaFuel)
         {
-            float deltaFuel = currentFuel - previousFuel;
             Containable item = container.Peek();
             if (item == null)
                 return;
@@ -89,6 +104,27 @@ namespace FineGameDesign.FireFeeder
 
             container.Pop();
             Destroy(fuel.gameObject);
+        }
+
+        private void PlayFuelIncrease(AudioSource source, AudioClip[] addFuelClips, float currentFuel, float fuelLastFrame)
+        {
+            float deltaFuel = currentFuel - fuelLastFrame;
+            int numClips = addFuelClips == null ? 0 : addFuelClips.Length;
+            if (numClips == 0)
+                return;
+
+            if (deltaFuel <= 0f)
+                return;
+
+            int index = (int)(deltaFuel - 0.5f);
+            if (index < 0)
+                return;
+
+            if (index >= numClips)
+                index = numClips - 1;
+
+            AudioClip clip = addFuelClips[index];
+            source.PlayOneShot(clip);
         }
     }
 }
