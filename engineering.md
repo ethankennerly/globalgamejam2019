@@ -32,19 +32,20 @@
 - [x] Footprint fades over time.
 - [x] Set avatar idle/walk animation and flip by direction.
 - [x] Blend torch animation by fuel.
+- [x] Hear 39 audio clips.
+- [x] Start fire small.
 
 # TODO
 
-- [ ] Hear audio.
+- [ ] Torch relights.
 - [ ] Lots of fuel scattered in distance.
 - [ ] Chaser starts at random angle from origin.
 - [ ] Message "Can you survive longer" calls out time.
 - [ ] Hold to change direction.
 - [ ] On game end, delay tap until a few seconds passed.
+- [ ] On die, show best time.
 - [ ] On tap, start clock.
 - [ ] When clock is paused, pause other game time.
-- [ ] On die, show best time.
 - [ ] Block avatar walking into fire.
 - [ ] Tween to increase fire.
-- [ ] Start fire smaller.
 - [ ] <https://answers.unity.com/questions/1019815/how-can-i-prevent-lights-overlapping-in-intensity.html>

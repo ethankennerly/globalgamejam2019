@@ -41,10 +41,16 @@ namespace FineGameDesign.FireFeeder
 
             if (m_BlendTrack == null && m_BlendWeight > 0f)
                 m_BlendTrack = m_Skeleton.state.SetAnimation(m_BlendTrackIndex, m_BlendAnimation, m_BlendLoop);
+            if (m_BlendTrack != null && m_BlendWeight <= 0f)
+            {
+                m_Skeleton.state.ClearTrack(m_BlendTrackIndex);
+                m_BlendTrack = null;
+            }
             if (m_BlendTrack == null)
                 return;
 
             m_BlendTrack.Alpha = m_BlendWeight;
+            m_BlendTrack.TrackEnd = float.MaxValue;
         }
     }
 }
