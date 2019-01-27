@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4512364310251342}
   - component: {fileID: 95425061969338308}
   m_Layer: 0
-  m_Name: FootprintLeft
+  m_Name: MonsterFootprintLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
