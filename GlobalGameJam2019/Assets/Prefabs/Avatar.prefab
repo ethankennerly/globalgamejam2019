@@ -911,10 +911,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Scaler: {fileID: 4436496854513904}
-  m_Skeleton: {fileID: 0}
+  m_Skeleton: {fileID: 114829558997765348}
   m_BlendAnimation: blendTorch
-  m_BlendTrack: 1
+  m_BlendTrackIndex: 1
+  m_BlendLoop: 1
   m_SubtractScale: 1
+  m_MinBlendWeight: 0.9
 --- !u!114 &114709600614530390
 MonoBehaviour:
   m_ObjectHideFlags: 1

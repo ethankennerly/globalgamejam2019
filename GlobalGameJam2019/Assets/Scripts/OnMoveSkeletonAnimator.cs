@@ -58,7 +58,8 @@ namespace FineGameDesign.FireFeeder
                     animation = m_MoveFrontAnimation;
                 else
                     animation = m_MoveBackAnimation;
-            m_Skeleton.AnimationName = animation;
+            if (m_Skeleton.AnimationName != animation)
+                m_Skeleton.AnimationName = animation;
 
             bool left = (angle > 90f && angle < 270f) ||
                 (angle < -90f && angle > -270f);
