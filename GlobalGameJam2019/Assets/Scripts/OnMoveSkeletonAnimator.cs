@@ -22,5 +22,53 @@ namespace FineGameDesign.FireFeeder
 
         [SerializeField]
         private string m_MoveFrontAnimation;
+
+        private Vector3 m_PreviousPosition;
+
+        private void OnEnable()
+        {
+            m_PreviousPosition = transform.position;
+        }
+
+        private void Update()
+        {
+            Vector3 currentPosition = transform.position;
+            if (currentPosition == m_PreviousPosition)
+                return;
+
+            float distance = Vector3.Distance(currentPosition, m_PreviousPosition);
+            float deltaTime = Time.deltaTime;
+            bool idle = true;
+            if (deltaTime > 0f)
+            {
+                float speed = distance / deltaTime;
+                if (speed > m_MaxIdleSpeed)
+                    idle = false;
+            }
+            float angle = AngleBetweenPoints(m_PreviousPosition, currentPosition);
+            bool front = angle < 0f || angle > 180f;
+            string animation;
+            if (idle)
+                if (front)
+                    animation = m_IdleFrontAnimation;
+                else
+                    animation = m_IdleBackAnimation;
+            else
+                if (front)
+                    animation = m_MoveFrontAnimation;
+                else
+                    animation = m_MoveBackAnimation;
+            m_Skeleton.AnimationName = animation;
+
+            m_PreviousPosition = transform.position;
+        }
+
+        /// <summary>
+        /// <a href="https://answers.unity.com/questions/161138/deriving-and-angle-from-two-points.html">From two points</a>
+        /// </summary>
+        private static float AngleBetweenPoints(Vector2 p1, Vector2 p2)
+        {
+            return Mathf.Atan2(p2.y-p1.y, p2.x-p1.x) * Mathf.Rad2Deg;
+        }
     }
 }
