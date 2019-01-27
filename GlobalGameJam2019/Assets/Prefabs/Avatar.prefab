@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 33038977333941936}
   - component: {fileID: 23954087373901290}
   - component: {fileID: 114829558997765348}
+  - component: {fileID: 114292331536769398}
   m_Layer: 0
   m_Name: AvatarSkeleton
   m_TagString: Untagged
@@ -880,6 +881,23 @@ MonoBehaviour:
   m_FuelPerSecond: -0.03125
   m_CookieSizePerFuel: 40
   m_Container: {fileID: 114730488097826502}
+--- !u!114 &114292331536769398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1700165019486092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c058db3cb8ac94bed9a5f1f878fd7631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Skeleton: {fileID: 114829558997765348}
+  m_MaxIdleSpeed: 0.01
+  m_IdleBackAnimation: IdleBack
+  m_IdleFrontAnimation: IdleFront
+  m_MoveBackAnimation: WalkBack
+  m_MoveFrontAnimation: WalkFront
 --- !u!114 &114709600614530390
 MonoBehaviour:
   m_ObjectHideFlags: 1
