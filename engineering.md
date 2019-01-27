@@ -39,18 +39,17 @@
 - [x] Chaser starts at random angle from origin.
 - [x] Hold to change direction.
 - [x] When chaser footstep is close, shake screen. Copied from [Daniel Moore](http://wiki.unity3d.com/index.php/Camera_Shake).
+- [x] Message "Can you survive longer" calls out time.
 
 # TODO
 
-- [ ] Toby: Original image for avatar.
 - [ ] Toby: Torch relights.
-- [ ] Message "Can you survive longer" calls out time.
 - [ ] On game end, delay tap until a few seconds passed.
 - [ ] On die, show best time.
+- [ ] Block avatar walking into fire.
 - [ ] On tap, start clock.
 - [ ] Frame rate 30 fps.
 - [ ] When clock is paused, pause other game time.
-- [ ] Block avatar walking into fire.
 - [ ] Z-sort fire.
 - [ ] Tween to increase fire.
 - [ ] <https://answers.unity.com/questions/1019815/how-can-i-prevent-lights-overlapping-in-intensity.html>

@@ -1,34 +1,76 @@
 
 kid.png
-size: 1024,512
+size: 1024,128
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-_0001_flameTorch
-  rotate: false
-  xy: 516, 128
+arm
+  rotate: true
+  xy: 4, 20
+  size: 18, 45
+  orig: 18, 45
+  offset: 0, 0
+  index: -1
+flameTorch
+  rotate: true
+  xy: 4, 42
   size: 82, 355
   orig: 82, 355
   offset: 0, 0
   index: -1
-_0004_Stick1
+forearm
+  rotate: true
+  xy: 762, 52
+  size: 13, 35
+  orig: 13, 35
+  offset: 0, 0
+  index: -1
+hand
   rotate: false
-  xy: 2, 2
+  xy: 853, 102
+  size: 23, 22
+  orig: 23, 22
+  offset: 0, 0
+  index: -1
+headFront
+  rotate: false
+  xy: 566, 34
+  size: 114, 90
+  orig: 114, 90
+  offset: 0, 0
+  index: -1
+leg
+  rotate: true
+  xy: 4, 4
+  size: 12, 42
+  orig: 12, 42
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 762, 69
+  size: 87, 55
+  orig: 87, 55
+  offset: 0, 0
+  index: -1
+shorts
+  rotate: false
+  xy: 363, 52
+  size: 20, 29
+  orig: 20, 29
+  offset: 0, 0
+  index: -1
+stick1
+  rotate: false
+  xy: 363, 85
   size: 199, 39
   orig: 199, 39
   offset: 0, 0
   index: -1
-_0006_kidFront
+torso
   rotate: false
-  xy: 2, 43
-  size: 255, 440
-  orig: 255, 440
-  offset: 0, 0
-  index: -1
-_0007_kidBack
-  rotate: false
-  xy: 259, 43
-  size: 255, 440
-  orig: 255, 440
+  xy: 684, 38
+  size: 74, 86
+  orig: 74, 86
   offset: 0, 0
   index: -1
