@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114004355554014476}
   - component: {fileID: 58083656980577646}
   - component: {fileID: 114491211419111202}
+  - component: {fileID: 50198665810985004}
   m_Layer: 0
   m_Name: Chaser
   m_TagString: Untagged
@@ -160,6 +161,26 @@ Transform:
   m_Father: {fileID: 4660439652131322}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50198665810985004
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063464856737226}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &58083656980577646
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -190,6 +211,8 @@ MonoBehaviour:
   m_Target: {fileID: 0}
   m_Speed: 4
   m_Rotator: {fileID: 4704874803083798}
+  m_Repellants:
+  - {fileID: 0}
 --- !u!114 &114491211419111202
 MonoBehaviour:
   m_ObjectHideFlags: 1
