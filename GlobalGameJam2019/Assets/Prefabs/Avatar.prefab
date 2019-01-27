@@ -80,7 +80,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4721133653217662}
   - component: {fileID: 20741070329042974}
-  - component: {fileID: 81583895690948500}
   - component: {fileID: 114013805852159632}
   m_Layer: 0
   m_Name: MainCamera
@@ -227,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4554759921967430}
   - component: {fileID: 114709600614530390}
+  - component: {fileID: 81812606839017146}
   m_Layer: 0
   m_Name: Avatar
   m_TagString: Untagged
@@ -805,12 +805,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.99, y: 0.39}
   m_EdgeRadius: 0
---- !u!81 &81583895690948500
+--- !u!81 &81812606839017146
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1112088482062488}
+  m_GameObject: {fileID: 1767492244333444}
   m_Enabled: 1
 --- !u!108 &108455097482542898
 Light:
