@@ -38,12 +38,12 @@
 - [x] Time counts minutes.
 - [x] Chaser starts at random angle from origin.
 - [x] Hold to change direction.
+- [x] When chaser footstep is close, shake screen. Copied from [Daniel Moore](http://wiki.unity3d.com/index.php/Camera_Shake).
 
 # TODO
 
 - [ ] Toby: Original image for avatar.
 - [ ] Toby: Torch relights.
-- [ ] When chaser footstep is close, shake screen.
 - [ ] Message "Can you survive longer" calls out time.
 - [ ] On game end, delay tap until a few seconds passed.
 - [ ] On die, show best time.
