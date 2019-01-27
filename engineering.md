@@ -36,11 +36,11 @@
 - [x] Start fire small.
 - [x] Lots of fuel scattered in distance.
 - [x] Time counts minutes.
+- [x] Chaser starts at random angle from origin.
 
 # TODO
 
 - [ ] Toby: Torch relights.
-- [ ] Chaser starts at random angle from origin.
 - [ ] When chaser footstep is close, shake screen.
 - [ ] Message "Can you survive longer" calls out time.
 - [ ] Hold to change direction.
