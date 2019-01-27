@@ -15,12 +15,13 @@
 - [x] Dropoff fuel increases torch light size.
     - [x] Container refers to Thief: Swap best content of other, regardless if give enabled.
 - [x] Chaser chases avatar.
+- [x] When chaser is collides with avatar, next tap restarts game.
 
 # TODO
 
+- [ ] When chaser is collides with avatar, animate game over UI.
 - [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
-- [ ] When chaser is collides, animate game over UI.
 - [ ] When chaser enters light, repels and pauses.
 - [ ] When chaser would faces light, walks perpendicular to light source.
 - [ ] Start clock.
