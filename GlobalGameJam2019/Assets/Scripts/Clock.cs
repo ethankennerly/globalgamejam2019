@@ -46,11 +46,11 @@ namespace FineGameDesign.FireFeeder
             m_PreviousSeconds = wholeSeconds;
 
             const int kSecondsPerMinute = 60;
-            wholeSeconds %= kSecondsPerMinute;
-            string secondsFormat = wholeSeconds < 10 ?
-                ":0" + wholeSeconds.ToString() :
-                ":" + wholeSeconds.ToString();
             int wholeMinutes = wholeSeconds / kSecondsPerMinute;
+            int secondsPart = wholeSeconds % kSecondsPerMinute;
+            string secondsFormat = secondsPart < 10 ?
+                ":0" + secondsPart.ToString() :
+                ":" + secondsPart.ToString();
             m_PreviousFormat = wholeMinutes.ToString() + secondsFormat;
             return m_PreviousFormat;
         }
