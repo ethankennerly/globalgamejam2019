@@ -23,17 +23,6 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private string m_EndAnimation;
 
-        private void Update()
-        {
-            if (!m_GameEnded)
-                return;
-
-            if (!Input.GetMouseButtonDown(0))
-                return;
-
-            SceneManager.LoadScene(0);
-        }
-
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other != m_ColliderEndsGame)

@@ -27,9 +27,10 @@ namespace FineGameDesign.FireFeeder
         private float m_RepelledDuration = 2f;
         private float m_RepelledTime;
         private bool m_Repelled;
+        private bool m_InRepelTrigger;
 
         [SerializeField]
-        private GameEnder m_RepellEnder;
+        private MonoBehaviour[] m_OnRepelDisablers;
 
         private bool m_HasDestination;
         private Vector2 m_Destination;
@@ -39,19 +40,7 @@ namespace FineGameDesign.FireFeeder
         {
             if (m_Repelled)
             {
-                m_RepelledTime -= Time.deltaTime;
-                if (m_RepelledTime >= 1f)
-                {
-                    Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
-                    return;
-                }
-
-                if (m_RepelledTime > 0f)
-                    return;
-
-                m_Repelled = false;
-                if (m_RepellEnder != null)
-                    m_RepellEnder.enabled = true;
+                UpdateRepelled();
                 return;
             }
 
@@ -67,22 +56,58 @@ namespace FineGameDesign.FireFeeder
             Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
         }
 
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            StartRepelled(other);
+        }
+
         private void OnTriggerStay2D(Collider2D other)
         {
             if (m_Repelled)
                 return;
 
+            StartRepelled(other);
+        }
+
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            m_Repelled = false;
+        }
+
+        private void StartRepelled(Collider2D other)
+        {
             if (Array.IndexOf(m_Repellants, other) < 0)
                 return;
 
-            if (m_RepellEnder != null && !m_RepellEnder.gameEnded)
-                m_RepellEnder.enabled = false;
+            foreach (MonoBehaviour disabler in m_OnRepelDisablers)
+                disabler.enabled = false;
+
             m_Repelled = true;
             m_RepelledTime = m_RepelledDuration;
             Rotate(m_Rotator, m_Follower.position, other.transform.position);
             Vector2 destination = m_RepelledTarget.transform.position;
             SetWorldDestination(destination.x, destination.y);
         }
+
+        private void UpdateRepelled()
+        {
+            m_RepelledTime -= Time.deltaTime;
+            if (m_RepelledTime >= 1f)
+            {
+                Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
+                return;
+            }
+
+            if (m_RepelledTime > 0f)
+                return;
+
+            if (m_Repelled)
+                return;
+
+            foreach (MonoBehaviour disabler in m_OnRepelDisablers)
+                disabler.enabled = true;
+        }
+
 
         // TODO: Extract common methods from TapFollower2D and Chaser to Follower composition.
 

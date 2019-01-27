@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4179563001248180}
+  - component: {fileID: 114491211419111202}
   - component: {fileID: 114004355554014476}
   - component: {fileID: 58083656980577646}
-  - component: {fileID: 114491211419111202}
   - component: {fileID: 50198665810985004}
   m_Layer: 0
   m_Name: Chaser
@@ -245,7 +245,8 @@ MonoBehaviour:
   - {fileID: 0}
   m_RepelledTarget: {fileID: 4557020615158158}
   m_RepelledDuration: 3
-  m_RepellEnder: {fileID: 114491211419111202}
+  m_OnRepelDisablers:
+  - {fileID: 114491211419111202}
 --- !u!114 &114491211419111202
 MonoBehaviour:
   m_ObjectHideFlags: 1
