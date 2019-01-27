@@ -24,9 +24,10 @@
 
 # TODO
 
+- [ ] When chaser in light, disable game ender.
 - [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
-- [ ] When chaser in light, do not spawn footprints and disable its collider.
+- [ ] When chaser in light, do not spawn footprints.
 - [ ] Set avatar animation and flipping by direction.
 - [ ] Blend torch animation.
 - [ ] Hear audio.

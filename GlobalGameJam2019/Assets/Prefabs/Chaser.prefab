@@ -245,6 +245,7 @@ MonoBehaviour:
   - {fileID: 0}
   m_RepelledTarget: {fileID: 4557020615158158}
   m_RepelledDuration: 3
+  m_RepellEnder: {fileID: 114491211419111202}
 --- !u!114 &114491211419111202
 MonoBehaviour:
   m_ObjectHideFlags: 1

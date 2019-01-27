@@ -13,6 +13,10 @@ namespace FineGameDesign.FireFeeder
 
         [SerializeField]
         private bool m_GameEnded;
+        public bool gameEnded
+        {
+            get { return m_GameEnded; }
+        }
 
         [SerializeField]
         private Animator m_EndAnimator;

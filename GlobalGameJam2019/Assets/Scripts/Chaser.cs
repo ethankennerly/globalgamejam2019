@@ -28,6 +28,9 @@ namespace FineGameDesign.FireFeeder
         private float m_RepelledTime;
         private bool m_Repelled;
 
+        [SerializeField]
+        private GameEnder m_RepellEnder;
+
         private bool m_HasDestination;
         private Vector2 m_Destination;
         private Vector2 m_Step;
@@ -37,13 +40,18 @@ namespace FineGameDesign.FireFeeder
             if (m_Repelled)
             {
                 m_RepelledTime -= Time.deltaTime;
-                if (m_RepelledTime >= 0f)
+                if (m_RepelledTime >= 1f)
                 {
                     Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
                     return;
                 }
 
+                if (m_RepelledTime > 0f)
+                    return;
+
                 m_Repelled = false;
+                if (m_RepellEnder != null)
+                    m_RepellEnder.enabled = true;
                 return;
             }
 
@@ -67,6 +75,8 @@ namespace FineGameDesign.FireFeeder
             if (Array.IndexOf(m_Repellants, other) < 0)
                 return;
 
+            if (m_RepellEnder != null && !m_RepellEnder.gameEnded)
+                m_RepellEnder.enabled = false;
             m_Repelled = true;
             m_RepelledTime = m_RepelledDuration;
             Rotate(m_Rotator, m_Follower.position, other.transform.position);
