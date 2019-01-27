@@ -44,9 +44,12 @@
 - [x] Frame rate 30 fps.
 - [x] Camp fire repels avatar.
 - [x] On game end, ignore tap until 1 second passed.
+- [x] On die, disable tap follower.
 
 # TODO
 
+- [ ] Cole: Loop or fade music.
+- [ ] Toby: Fire transparent.
 - [ ] On die, show best time.
 - [ ] Z-sort fire.
 - [ ] On tap, start clock.

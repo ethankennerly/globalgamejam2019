@@ -23,6 +23,9 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private string m_EndAnimation;
 
+        [SerializeField]
+        private MonoBehaviour[] m_OnEndDisabled;
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other != m_ColliderEndsGame)
@@ -31,6 +34,9 @@ namespace FineGameDesign.FireFeeder
             m_GameEnded = true;
             m_Clock.paused = true;
             m_EndAnimator.Play(m_EndAnimation);
+
+            foreach (MonoBehaviour disabled in m_OnEndDisabled)
+                disabled.enabled = false;
         }
     }
 }
