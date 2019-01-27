@@ -38,7 +38,7 @@ namespace FineGameDesign.FireFeeder
 
         private void Update()
         {
-            UpdateFuel(Time.deltaTime);
+            UpdateFuel(Clock.instance.deltaTime);
             UpdateCookieSize(m_CurrentFuel);
             UpdateScale(m_ScaleByFuel, m_CurrentFuel);
         }

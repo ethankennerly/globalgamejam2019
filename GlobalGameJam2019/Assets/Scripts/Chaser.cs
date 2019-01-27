@@ -52,7 +52,7 @@ namespace FineGameDesign.FireFeeder
                 return;
 
             SetWorldDestination(target.position.x, target.position.y);
-            Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
+            Step(m_Follower, m_Destination, m_Speed * Clock.instance.deltaTime);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -90,10 +90,10 @@ namespace FineGameDesign.FireFeeder
 
         private bool UpdateRepelled()
         {
-            m_RepelledTime -= Time.deltaTime;
+            m_RepelledTime -= Clock.instance.deltaTime;
             if (m_RepelledTime >= 1f)
             {
-                Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
+                Step(m_Follower, m_Destination, m_Speed * Clock.instance.deltaTime);
                 return true;
             }
 

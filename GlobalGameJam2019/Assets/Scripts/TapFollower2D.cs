@@ -47,7 +47,7 @@ namespace FineGameDesign.FireFeeder
 
         private void Update()
         {
-            Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
+            Step(m_Follower, m_Destination, m_Speed * Clock.instance.deltaTime);
         }
 
         private void OnTriggerEnter2D(Collider2D other)

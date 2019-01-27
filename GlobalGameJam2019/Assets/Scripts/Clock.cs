@@ -1,5 +1,6 @@
-using UnityEngine;
+using FineGameDesign.Utils;
 using TMPro;
+using UnityEngine;
 
 namespace FineGameDesign.FireFeeder
 {
@@ -21,7 +22,14 @@ namespace FineGameDesign.FireFeeder
         private int m_PreviousSeconds = -1;
         private string m_PreviousFormat;
 
+        public static Clock instance { get; private set; }
+
         public float deltaTime { get; private set; }
+
+        private void OnEnable()
+        {
+            instance = this;
+        }
 
         private void Update()
         {

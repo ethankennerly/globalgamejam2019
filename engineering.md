@@ -45,12 +45,12 @@
 - [x] Camp fire repels avatar.
 - [x] On game end, ignore tap until 1 second passed.
 - [x] On die, disable tap follower.
+- [x] On tap, start clock.
+- [x] When clock is paused, pause other game time.
 
 # TODO
 
 - [ ] Toby: Fire transparent.
-- [ ] On tap, start clock.
-- [ ] When clock is paused, pause other game time.
 - [ ] On die, show best time.
 - [ ] Z-sort fire.
 - [ ] Tween to increase fire.

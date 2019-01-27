@@ -55,9 +55,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224115087133361702}
+  - component: {fileID: 114817556619071274}
   - component: {fileID: 222541180937499246}
   - component: {fileID: 114701183467026222}
-  - component: {fileID: 114817556619071274}
   m_Layer: 5
   m_Name: Clock
   m_TagString: Untagged
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1810920540758176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77dc7829a5dc34b6aaf8d011e6ea7771, type: 3}
   m_Name: 
@@ -402,7 +402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -78.68, y: -23.06}
+  m_AnchoredPosition: {x: -78.67969, y: -23.059998}
   m_SizeDelta: {x: 146.16, y: 39.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224835930287280374
@@ -440,6 +440,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -196.3, y: -23.059998}
+  m_AnchoredPosition: {x: -196.2998, y: -23.059998}
   m_SizeDelta: {x: 157.36, y: 39.14}
   m_Pivot: {x: 0.5, y: 0.5}
