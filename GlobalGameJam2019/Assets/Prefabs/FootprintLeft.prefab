@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4512364310251342}
   m_Layer: 0
-  m_Name: Footprint2
+  m_Name: FootprintLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
