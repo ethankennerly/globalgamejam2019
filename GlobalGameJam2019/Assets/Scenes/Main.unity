@@ -11835,9 +11835,9 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114387349216821322, guid: 23d1887962971481b8ce4835853900fd,
+    - target: {fileID: 114333127843318600, guid: 23d1887962971481b8ce4835853900fd,
         type: 2}
-      propertyPath: m_TapEnabled.Array.data[0]
+      propertyPath: m_Clock
       value: 
       objectReference: {fileID: 1196119045}
     - target: {fileID: 114167889942994688, guid: 23d1887962971481b8ce4835853900fd,
@@ -19597,6 +19597,16 @@ Prefab:
     - target: {fileID: 114541074123013430, guid: 74d61666cde2044548c9267d526e4a25,
         type: 2}
       propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817556619071274, guid: 74d61666cde2044548c9267d526e4a25,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817556619071274, guid: 74d61666cde2044548c9267d526e4a25,
+        type: 2}
+      propertyPath: m_Paused
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
