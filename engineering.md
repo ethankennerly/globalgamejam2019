@@ -24,6 +24,7 @@
 - [x] When chaser in light, disable game ender.
 - [x] When repelled, disable game ender.
 - [x] Pickup stick when avatar collider enters, not light collider.
+- [x] Dropoff fuel if touch camp fire, not camp light.
 
 # TODO
 
