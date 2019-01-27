@@ -31,10 +31,10 @@
 - [x] To conserve CPU and memory, pool footprints.
 - [x] Footprint fades over time.
 - [x] Set avatar idle/walk animation and flip by direction.
+- [x] Blend torch animation by fuel.
 
 # TODO
 
-- [ ] Blend torch animation by fuel.
 - [ ] Hear audio.
 - [ ] Lots of fuel scattered in distance.
 - [ ] Chaser starts at random angle from origin.
