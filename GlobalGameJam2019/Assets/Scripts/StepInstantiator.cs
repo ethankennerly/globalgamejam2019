@@ -25,7 +25,7 @@ namespace FineGameDesign.FireFeeder
             if (m_DistanceSinceLastStep >= m_DistanceBetweenStep)
             {
                 m_DistanceSinceLastStep -= m_DistanceBetweenStep;
-                Instantiate(m_PrefabsToInstantiate[m_PrefabIndex], transform.position, Quaternion.identity);
+                Instantiate(m_PrefabsToInstantiate[m_PrefabIndex], transform.position, transform.rotation);
                 ++m_PrefabIndex;
                 if (m_PrefabIndex >= m_PrefabsToInstantiate.Length)
                     m_PrefabIndex = 0;
