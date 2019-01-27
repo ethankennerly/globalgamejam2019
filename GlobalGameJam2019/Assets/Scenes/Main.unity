@@ -3881,6 +3881,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6feac836c17f4de99ecd56e1a60d929, type: 2}
   m_IsPrefabParent: 0
+--- !u!58 &849349190 stripped
+CircleCollider2D:
+  m_PrefabParentObject: {fileID: 58218815916444460, guid: c6feac836c17f4de99ecd56e1a60d929,
+    type: 2}
+  m_PrefabInternal: {fileID: 849349189}
 --- !u!1001 &864713373
 Prefab:
   m_ObjectHideFlags: 0
@@ -4339,11 +4344,6 @@ Transform:
 --- !u!4 &948302870 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4554759921967430, guid: c6feac836c17f4de99ecd56e1a60d929,
-    type: 2}
-  m_PrefabInternal: {fileID: 849349189}
---- !u!58 &948302872 stripped
-CircleCollider2D:
-  m_PrefabParentObject: {fileID: 58017997265043098, guid: c6feac836c17f4de99ecd56e1a60d929,
     type: 2}
   m_PrefabInternal: {fileID: 849349189}
 --- !u!1001 &981173341
@@ -5067,7 +5067,7 @@ Prefab:
         type: 2}
       propertyPath: m_ColliderEndsGame
       value: 
-      objectReference: {fileID: 948302872}
+      objectReference: {fileID: 849349190}
     - target: {fileID: 114491211419111202, guid: f00b767b284854cf28408b5fb832a467,
         type: 2}
       propertyPath: m_Clock
@@ -6273,6 +6273,21 @@ Prefab:
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224936365062599842, guid: 74d61666cde2044548c9267d526e4a25,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -196.2998
+      objectReference: {fileID: 0}
+    - target: {fileID: 224115087133361702, guid: 74d61666cde2044548c9267d526e4a25,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -78.67969
+      objectReference: {fileID: 0}
+    - target: {fileID: 224115087133361702, guid: 74d61666cde2044548c9267d526e4a25,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -23.059998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74d61666cde2044548c9267d526e4a25, type: 2}

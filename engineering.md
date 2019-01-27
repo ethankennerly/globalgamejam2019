@@ -22,11 +22,11 @@
 - [x] Lots of fuel scattered around.
 - [x] When chaser enters light, repels to a point.
 - [x] When chaser in light, disable game ender.
+- [x] When repelled, disable game ender.
+- [x] Pickup stick when avatar collider enters, not light collider.
 
 # TODO
 
-- [ ] When repelled, disable game ender.
-- [ ] Pickup stick when avatar collider enters, not light collider.
 - [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
 - [ ] When chaser in light, do not spawn footprints.
