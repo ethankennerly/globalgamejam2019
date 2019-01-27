@@ -25,7 +25,7 @@
 - [x] When repelled, disable game ender.
 - [x] Pickup stick when avatar collider enters, not light collider.
 - [x] Dropoff fuel if touch camp fire, not camp light.
-- [ ] Fuel not close enough to fire to not exit fire.
+- [x] Fuel not close enough to fire to not exit fire.
 
 # TODO
 
