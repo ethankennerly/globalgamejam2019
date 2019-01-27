@@ -25,8 +25,10 @@
 - [ ] Footprint fades over time.
 - [ ] When chaser enters light, repels and pauses.
 - [ ] When chaser would faces light, walks perpendicular to light source.
-- [ ] Start clock.
+- [ ] Lots of fuel scattered around.
+- [ ] When 
 - [ ] Set avatar animation and flipping by direction.
+- [ ] Start clock.
 - [ ] On tap, start clock.
 - [ ] When clock is paused, pause other game time.
 - [ ] On die, show best time.
