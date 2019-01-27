@@ -20,17 +20,18 @@
 - [x] When chaser is collides with avatar, animate game ended UI.
 - [x] Start clock. On die pause clock.
 - [x] Lots of fuel scattered around.
+- [x] When chaser enters light, repels to a point.
 
 # TODO
 
-- [ ] When chaser enters light, repels and pauses.
-- [ ] When chaser would faces light, walks perpendicular to light source.
 - [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
+- [ ] When chaser in light, do not spawn footprints.
 - [ ] Set avatar animation and flipping by direction.
 - [ ] Blend torch animation.
 - [ ] Hear audio.
 - [ ] Lots of fuel scattered in distance.
+- [ ] Chaser starts at random angle from origin.
 - [ ] Message "Can you survive longer" calls out time.
 - [ ] Hold to change direction.
 - [ ] On game end, delay tap until a few seconds passed.

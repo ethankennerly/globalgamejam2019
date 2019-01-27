@@ -20,9 +20,13 @@ namespace FineGameDesign.FireFeeder
 
         [SerializeField]
         private Collider2D[] m_Repellants;
-        private bool m_Repelled;
-        private float m_RepelledDuration = 0.5f;
+
+        [SerializeField]
+        private Transform m_RepelledTarget;
+        [SerializeField]
+        private float m_RepelledDuration = 2f;
         private float m_RepelledTime;
+        private bool m_Repelled;
 
         private bool m_HasDestination;
         private Vector2 m_Destination;
@@ -34,7 +38,10 @@ namespace FineGameDesign.FireFeeder
             {
                 m_RepelledTime -= Time.deltaTime;
                 if (m_RepelledTime >= 0f)
+                {
+                    Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
                     return;
+                }
 
                 m_Repelled = false;
                 return;
@@ -54,11 +61,17 @@ namespace FineGameDesign.FireFeeder
 
         private void OnTriggerStay2D(Collider2D other)
         {
+            if (m_Repelled)
+                return;
+
             if (Array.IndexOf(m_Repellants, other) < 0)
                 return;
 
             m_Repelled = true;
             m_RepelledTime = m_RepelledDuration;
+            Rotate(m_Rotator, m_Follower.position, other.transform.position);
+            Vector2 destination = m_RepelledTarget.transform.position;
+            SetWorldDestination(destination.x, destination.y);
         }
 
         // TODO: Extract common methods from TapFollower2D and Chaser to Follower composition.
