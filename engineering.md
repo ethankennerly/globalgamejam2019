@@ -48,11 +48,10 @@
 
 # TODO
 
-- [ ] Cole: Loop or fade music.
 - [ ] Toby: Fire transparent.
-- [ ] On die, show best time.
-- [ ] Z-sort fire.
 - [ ] On tap, start clock.
 - [ ] When clock is paused, pause other game time.
+- [ ] On die, show best time.
+- [ ] Z-sort fire.
 - [ ] Tween to increase fire.
 - [ ] <https://answers.unity.com/questions/1019815/how-can-i-prevent-lights-overlapping-in-intensity.html>
