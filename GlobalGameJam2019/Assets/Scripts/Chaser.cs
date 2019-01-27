@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace FineGameDesign.FireFeeder
@@ -17,13 +18,20 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private Transform m_Rotator;
 
+        [SerializeField]
+        private Collider2D[] m_Repellants;
+        private bool m_Repelled;
+
         private bool m_HasDestination;
         private Vector2 m_Destination;
         private Vector2 m_Step;
 
         private void Update()
         {
-            Chase(m_Target);
+            if (!m_Repelled)
+                Chase(m_Target);
+
+            m_Repelled = false;
         }
 
         private void Chase(Transform target)
@@ -33,6 +41,14 @@ namespace FineGameDesign.FireFeeder
 
             SetWorldDestination(target.position.x, target.position.y);
             Step(m_Follower, m_Destination, m_Speed * Time.deltaTime);
+        }
+
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            if (Array.IndexOf(m_Repellants, other) < 0)
+                return;
+
+            m_Repelled = true;
         }
 
         // TODO: Extract common methods from TapFollower2D and Chaser to Follower composition.

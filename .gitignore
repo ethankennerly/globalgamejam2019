@@ -46,3 +46,4 @@ sysinfo.txt
 
 # JetBrains editor
 /*/Assets/Plugins/Editor*
+.idea/

@@ -8,6 +8,9 @@ namespace FineGameDesign.FireFeeder
         private Light m_LightWithCookie;
 
         [SerializeField]
+        private Transform m_ScaleByFuel;
+
+        [SerializeField]
         private float m_CurrentFuel = 1f;
 
         [SerializeField]
@@ -29,6 +32,7 @@ namespace FineGameDesign.FireFeeder
         {
             UpdateFuel(Time.deltaTime);
             UpdateCookieSize(m_CurrentFuel);
+            UpdateScale(m_ScaleByFuel, m_CurrentFuel);
         }
 
         private void UpdateFuel(float deltaTime)
@@ -42,6 +46,14 @@ namespace FineGameDesign.FireFeeder
         private void UpdateCookieSize(float fuel)
         {
             m_LightWithCookie.cookieSize = fuel * m_CookieSizePerFuel;
+        }
+
+        private void UpdateScale(Transform scaledTransform, float scale)
+        {
+            if (scaledTransform == null)
+                return;
+
+            scaledTransform.localScale = new Vector3(scale, scale, scale);
         }
 
         private float GetFuel(Container container)

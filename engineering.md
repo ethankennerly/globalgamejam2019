@@ -31,7 +31,9 @@
 - [ ] Blend torch animation.
 - [ ] Hear audio.
 - [ ] Lots of fuel scattered in distance.
+- [ ] Message "Can you survive longer" calls out time.
 - [ ] Hold to change direction.
+- [ ] On game end, delay tap until a few seconds passed.
 - [ ] On tap, start clock.
 - [ ] When clock is paused, pause other game time.
 - [ ] On die, show best time.
