@@ -26,12 +26,13 @@
 - [x] Pickup stick when avatar collider enters, not light collider.
 - [x] Dropoff fuel if touch camp fire, not camp light.
 - [x] Fuel not close enough to fire to not exit fire.
+- [x] When chaser moves, spawn footprint.
+- [x] When chaser in light, do not spawn footprints.
 
 # TODO
 
-- [ ] When chaser is close and moves, spawn footprint.
 - [ ] Footprint fades over time.
-- [ ] When chaser in light, do not spawn footprints.
+- [ ] To conserve CPU and memory, pool footprints.
 - [ ] Set avatar animation and flipping by direction.
 - [ ] Blend torch animation.
 - [ ] Hear audio.
