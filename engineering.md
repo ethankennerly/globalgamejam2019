@@ -28,10 +28,10 @@
 - [x] Fuel not close enough to fire to not exit fire.
 - [x] When chaser moves, spawn footprint.
 - [x] When chaser in light, do not spawn footprints.
+- [x] To conserve CPU and memory, pool footprints.
 
 # TODO
 
-- [ ] To conserve CPU and memory, pool footprints.
 - [ ] Footprint fades over time.
 - [ ] Set avatar animation and flipping by direction.
 - [ ] Blend torch animation.
