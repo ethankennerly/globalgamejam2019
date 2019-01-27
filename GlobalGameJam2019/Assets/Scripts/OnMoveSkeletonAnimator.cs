@@ -23,6 +23,9 @@ namespace FineGameDesign.FireFeeder
         [SerializeField]
         private string m_MoveFrontAnimation;
 
+        [SerializeField]
+        private bool m_OriginalFacesLeft;
+
         private Vector3 m_PreviousPosition;
 
         private void OnEnable()
@@ -63,7 +66,8 @@ namespace FineGameDesign.FireFeeder
 
             bool left = (angle > 90f && angle < 270f) ||
                 (angle < -90f && angle > -270f);
-            m_Skeleton.Skeleton.FlipX = left;
+            bool flipX = m_OriginalFacesLeft ? !left : left;
+            m_Skeleton.Skeleton.FlipX = flipX;
 
             m_PreviousPosition = transform.position;
         }
