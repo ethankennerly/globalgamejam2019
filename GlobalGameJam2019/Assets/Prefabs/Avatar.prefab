@@ -81,6 +81,7 @@ GameObject:
   - component: {fileID: 4721133653217662}
   - component: {fileID: 20741070329042974}
   - component: {fileID: 114013805852159632}
+  - component: {fileID: 114586334017908264}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1130,6 +1131,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &114586334017908264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1112088482062488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2452ae9f01dc4967a73fdecf7cc44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TargetFrameRate: 30
 --- !u!114 &114611204061372564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1333,7 +1346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: 9eda1ffce52ba4013b378f8bef358bdf, type: 2}
   initialSkinName: default
-  initialFlipX: 0
+  initialFlipX: 1
   initialFlipY: 0
   separatorSlotNames: []
   zSpacing: 0
